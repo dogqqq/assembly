@@ -12,9 +12,9 @@ ExitProcess proto, dwExitCode:dword
 INCLUDELIB legacy_stdio_definitions.lib
 
 printf PROTO C,
-	format:DWORD,	n:vararg
+	format:PTR BYTE,	args:VARARG
 scanf PROTO C,
-	format:DWORD,	n:vararg
+	format:PTR BYTE,	args:VARARG
 
 .data
 
