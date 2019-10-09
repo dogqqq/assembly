@@ -1,7 +1,7 @@
 ; Program Minimum and Maximum Numbers
-; Program Description: Given series of numbers, output the minimum and maximum numbers
+; Program Description: Given a set of numbers, output the minimum and maximum numbers
 ; Author: 407262512
-; Creation Date: 2019/10/07
+; Creation Date: 2019/10/09
 
 .386
 .model flat, stdcall
@@ -9,14 +9,17 @@
 option casemap : none
 ExitProcess proto, dwExitCode:dword
 
-
-INCLUDE Irvine32.inc
 INCLUDELIB legacy_stdio_definitions.lib
+
+printf PROTO C,
+	format:DWORD,	n:vararg
+scanf PROTO C,
+	format:DWORD,	n:vararg
 
 .data
 
 strInt BYTE "%d", 0
-outputAns BYTE "Min = %d Max = %d", 0dh, 0ah, 0
+outputAns BYTE "Min = %d  Max = %d", 0dh, 0ah, 0
 cases DWORD 0
 tmp SDWORD 0
 Min SDWORD 2147483647
