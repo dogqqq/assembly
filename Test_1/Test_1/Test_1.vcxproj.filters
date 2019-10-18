@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\407262512\407262512\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="..\..\407262512\407262512\asmMain.asm">
+    <MASM Include="asmMain.asm">
       <Filter>來源檔案</Filter>
     </MASM>
   </ItemGroup>

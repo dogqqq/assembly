@@ -1,4 +1,2 @@
-﻿  Assembling ..\..\407262512\407262512\asmMain.asm...
-  main.cpp
-LINK : warning LNK4098: 預設的程式庫 'ucrt.lib' 與其他使用的程式庫衝突，請使用 /NODEFAULTLIB:library
-  Test_1.vcxproj -> C:\Users\CS2019\Desktop\Test_1\Debug\Test_1.exe
+﻿  Assembling asmMain.asm...
+  Test_1.vcxproj -> C:\Users\JOY\Desktop\assembly\Test_1\Debug\Test_1.exe
