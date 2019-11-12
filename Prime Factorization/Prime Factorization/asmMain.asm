@@ -31,7 +31,7 @@ whileStart:
 	cmp input, 0
 	jl whileEnd						;if input < 0, then end program
 	cmp input, 1
-	je changeLine					;if input == 1, output \n
+	jle changeLine					;if input == 1, output \n
 
 innitialize:
 	mov divisor, 2
