@@ -91,6 +91,8 @@ calArea ENDP
 main PROC
 inputPoint:
 	invoke scanf, addr inputFormat, addr point1.X, addr point1.Y, addr point2.X, addr point2.Y, addr point3.X, addr point3.Y
+	cmp eax, 6
+	jne outP
 
 	invoke calDistance, point1, point2
 	fstp tri.a
